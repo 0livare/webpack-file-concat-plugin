@@ -1,0 +1,13 @@
+{
+  "name": "webpack-file-concat-plugin",
+  "description": "A simple webpack plugin for concatenating files together",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Zach Posten <zach@posten.io>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "fs-extra": "^9.0.1",
+    "glob": "^7.1.6"
+  }
+}
