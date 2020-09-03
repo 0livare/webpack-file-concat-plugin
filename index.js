@@ -4,7 +4,7 @@ const glob = require('glob')
 
 const validateOptions = require('./validateOptions')
 
-const defaultOptions = {deleteInputFiles: false, appendToDestination: true}
+const defaultOptions = {deleteSourceFiles: false, appendToDestination: false}
 
 module.exports = class FileConcatenationPlugin {
   constructor(options) {
@@ -34,7 +34,7 @@ module.exports = class FileConcatenationPlugin {
       let inputFileContents = await fs.readFile(inputFilePath)
       allInputFileContents += inputFileContents
 
-      if (this.options.deleteInputFiles) {
+      if (this.options.deleteSourceFiles) {
         await fs.remove(inputFilePath)
       }
     }

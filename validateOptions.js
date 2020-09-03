@@ -7,7 +7,7 @@ const requiredOptions = {
 }
 
 const optionalOptions = {
-  deleteInputFiles: 'boolean',
+  deleteSourceFiles: 'boolean',
   appendToDestination: 'boolean',
 }
 
