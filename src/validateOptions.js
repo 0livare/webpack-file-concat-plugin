@@ -1,15 +1,7 @@
 const pluginName = 'FileConcatenationPlugin'
 const invalidOptionErrorText = `Invalid options passed to ${pluginName}`
 
-const requiredOptions = {
-  destination: 'string',
-  source: 'string',
-}
-
-const optionalOptions = {
-  deleteSourceFiles: 'boolean',
-  appendToDestination: 'boolean',
-}
+const {requiredOptions, optionalOptions} = require('./options')
 
 module.exports = function validateOptions(options) {
   if (!options) {

@@ -2,9 +2,8 @@ const path = require('path')
 const fs = require('fs-extra')
 const glob = require('glob')
 
+const {defaultOptions} = require('./options')
 const validateOptions = require('./validateOptions')
-
-const defaultOptions = {deleteSourceFiles: false, appendToDestination: false}
 
 module.exports = class FileConcatenationPlugin {
   constructor(options) {
